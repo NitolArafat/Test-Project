@@ -97,30 +97,7 @@
                         <div class="widget-header"> <i class="icon-file"></i>
                             <h3> Friend List</h3>
                         </div>
-                         @foreach($friend_list as $frnd_list)
-                        <!-- /widget-header -->
-                        <div class="widget-content">
-                            <ul class="messages_layout">
-                                <li class="from_user left"> <a href="#" class="avatar"><img style="height: 100px;width: 200px" src="data:image/jpeg;base64,{{ $frnd_list->persion_picture }}" class="img-responsive" alt=""/></a>
-                                    <div class="message_wrap"style="margin-left: 135px;"> <span class="arrow"></span>
-                                        <div class="info"> <a class="name">{{$frnd_list->name}} </a> <span class="time">1 hour ago</span>
-                                            <div class="options_arrow">
-                                                <div class="dropdown pull-right"> 
-                                                     <a href="{{route('person-detail',['request_id'=>Auth::user()->id ,'response_id'=>$frnd_list->request_person_id])}}" class="btn btn-info">View Details</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="text">
-                                        <p class="news-item-preview">  Email : {{ $frnd_list->email }}</p>
-                                        <p class="news-item-preview"> Gender : {{ $frnd_list->gender==1? 'Male' : 'Femail' }}</p>
-                                        <p class="news-item-preview">  Date of Birth : {{ $frnd_list->date_of_birth }} </p>  
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /widget-content -->
-                        @endforeach
+ 
                     </div>
                     <!-- /widget -->
                     
