@@ -14,7 +14,7 @@
             </div>
             <div class="span8">
                 <div class="name-wrapper">
-                    <h1 class="name">{{ Auth::user()->name }}  {{Auth::user()->id}}</h1>
+                    <h1 class="name">{{ Auth::user()->name }}</h1>
                     <span>{{ Auth::user()->email }}</span>
                 </div>
                 <p>
